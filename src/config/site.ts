@@ -1,11 +1,13 @@
+const base = import.meta.env.BASE_URL;
+
 export const siteConfig = {
   studioName: "Hamido Game Studio",
   studioDescription:
     "Independent game developer focused on creating immersive mobile and PC experiences with clean implementation and high performance.",
 
-  // مسارات الصور (سهل تغييرها لاحقاً من هنا فقط)
-  logo: "/images/logo.png",
-  heroImage: "/images/studio-hero.jpg",
+  // مسارات الصور تأخذ الـ BASE_URL في الاعتبار
+  logo: `${base}images/logo.png`,
+  heroImage: `${base}images/studio-hero.jpg`,
 
   // روابط التواصل الأساسية
   socials: {
@@ -14,5 +16,4 @@ export const siteConfig = {
   },
 };
 
-// نضيف أيضاً export افتراضي لزيادة التوافق
 export default siteConfig;
