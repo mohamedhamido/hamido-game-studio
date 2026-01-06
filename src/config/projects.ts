@@ -1,3 +1,6 @@
+import unknownCover from "../assets/unknown-survival-cover.jpg";
+import treasureCover from "../assets/treasure-hunter-cover.jpg";
+
 export type Project = {
   id: string;
   title: string;
@@ -11,8 +14,6 @@ export type Project = {
   downloadUrl: string;
 };
 
-const base = import.meta.env.BASE_URL;
-
 export const projects: Project[] = [
   {
     id: "unknown-survival",
@@ -25,8 +26,7 @@ export const projects: Project[] = [
       "Atmospheric horror experience",
       "Focused on tension and exploration",
     ],
-    // لاحظ استخدام base هنا
-    coverImage: `${base}images/unknown-survival-cover.jpg`,
+    coverImage: unknownCover,
     galleryImages: [],
     videoEmbedUrl:
       "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1652041409501247%2F&show_text=false&width=560&t=0",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       "Designed for mobile play",
       "Casual but challenging gameplay",
     ],
-    coverImage: `${base}images/treasure-hunter-cover.jpg`,
+    coverImage: treasureCover,
     galleryImages: [],
     videoEmbedUrl:
       "https://www.facebook.com/plugins/video.php?height=317&href=https%3A%2F%2Fwww.facebook.com%2Fmohamed.hamido.379196%2Fvideos%2F7975101415883382%2F&show_text=false&width=560&t=0",
