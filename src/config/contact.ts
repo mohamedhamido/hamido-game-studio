@@ -12,7 +12,7 @@ export const socialLinks = [
 ];
 
 export const contactInfo = {
-  email: '',
+  email: 'sy64116@gmail.com',
   phone: '',
   location: 'Syria'
 };
