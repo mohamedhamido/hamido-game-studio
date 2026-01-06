@@ -2,18 +2,16 @@ const base = import.meta.env.BASE_URL;
 
 export const siteConfig = {
   studioName: "Hamido Game Studio",
-  studioDescription:
+  ownerName: "Mohamed Hamido",
+  tagline: "Game Developer • Unreal Engine",
+
+  heroTitle: "Mobile & PC Game Developer",
+  heroSubtitle:
     "Independent game developer focused on creating immersive mobile and PC experiences with clean implementation and high performance.",
 
-  // مسارات الصور تأخذ الـ BASE_URL في الاعتبار
-  logo: `${base}images/logo.png`,
+  // لاحظ أننا عدنا لاستخدام الاسم القديم: logoImage
+  logoImage: `${base}images/logo.png`,
   heroImage: `${base}images/studio-hero.jpg`,
-
-  // روابط التواصل الأساسية
-  socials: {
-    facebook: "https://www.facebook.com/mohamed.hamido.379196",
-    instagram: "https://www.instagram.com/mohamed_hamido0/",
-  },
 };
 
 export default siteConfig;
